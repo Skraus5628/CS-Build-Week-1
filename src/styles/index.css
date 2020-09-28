@@ -532,3 +532,39 @@ li{
 }
 
 /* About Page */
+
+.about{
+  height: 1500px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.aboutPage{
+
+  display: flex;
+  flex-direction: column;
+}
+
+.orderedList{
+  align-content: center;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.algoP{
+  align-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h2{
+  margin-bottom: 1rem;
+}
+
+.facts{
+  margin-bottom: 3rem;
+}

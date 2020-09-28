@@ -19,15 +19,19 @@
 	}
 	25% {
 		background: #60d394;
-	}
-	50% {
+    }
+    
+    45%{
+        background: rgb(99, 45, 134);
+    }
+	60% {
 		background: #aaf683;
 	}
 	75% {
 		background: #ffd97d;
 	}
 	100% {
-		background: #ff9b85;
+		background: #f1a290;
 	}
 }
 
@@ -45,7 +49,7 @@
     position: absolute;
     animation-name:
     backgroundColorPalette;
-	animation-duration: 10s;
+	animation-duration: 15s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear; 
