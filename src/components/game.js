@@ -161,15 +161,18 @@ class Game extends React.Component{
                 if (this.board[y][x]){
                     if (neighbors === 2 || neighbors === 3){
                         newBoard[y][x] = true;
+                        
                     } else {
                         newBoard[y][x] = false;
                     }
                 } else {
                     if (!this.board[y][x] && neighbors === 3){
                         newBoard[y][x] = true;
+                     
                     }
                 }
-                if(this.cells === 0){
+                // console.log(this.state.cells)
+                if(this.state.cells <= 0){
                     this.stopGame()
                 }
             }
@@ -180,7 +183,13 @@ class Game extends React.Component{
         this.state.generation++;
 
         this.timeoutHandler = window.setTimeout(() =>{
-            this.runIteration();
+            // this.runIteration();
+            if(this.state.isRunning = true){
+                this.runIteration()
+            }
+            else{
+                this.stopGame()
+            }
         }, this.state.interval);
     }
 

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 class About extends React.Component {
     render () {
         return (
-            <div>
+            <div className="aboutPage">
                 <h1>About</h1>
                 <h2>Rules</h2>
                 <ol className="orderedList">

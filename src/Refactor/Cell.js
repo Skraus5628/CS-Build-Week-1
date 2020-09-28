@@ -1,4 +1,4 @@
-import Cells from './Cells'
+import Cells from '../components/Cells'
 
 const Cell = (Cells) =>{
     return(
